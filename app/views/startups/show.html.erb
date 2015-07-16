@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+<div id="showArea">
+<div id="startupShowImage">
+  <!-- <strong>Url:</strong> -->
+  <%= image_tag @startup.url %>
+</div>
+
+<h1>
+  <!-- <strong>Name:</strong> -->
+  <%= @startup.name %>
+</h1>
+
+<h2>
+  <!-- <strong>Description:</strong> -->
+  <%= @startup.description %>
+</h2>
+
+<p>
+  <strong>Price:</strong>
+  $<%= @startup.price %>
+</p>
+</div>
+<div id="reviewarea">
+<h1>Reviews</h1>
+<% @startup.reviews.each do |review| %>
+<p>
+<%= review.comment %></p>
+<p id="addOn">Added on: <%=  time_ago_in_words(review.created_at) %>
+</p>
+<br>
+<% end %>
+<h3>Add a Review</h3>
+<%= render 'reviews/form' %>
+
+<% if current_user %>
+
+    <%= link_to 'Edit', edit_startup_path(@startup) %>
+
+<% end %>
+
+<%#= link_to 'Edit', edit_startup_path(@startup) %> |
+<%= link_to 'Back', startups_path %>
+</div>
