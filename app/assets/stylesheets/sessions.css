@@ -19,7 +19,7 @@
 
 /* HEADER */
 
-./*pull-right {
+/*pull-right {
   position: inline;
   margin: 20px 20px 0 0;
 }
@@ -41,13 +41,13 @@
 }
 .header a {
   color: #000;
-  font-size: 20px;  
-  text-decoration: none; 
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .header a:hover {
   color: #c91717;
-  text-decoration: none;   
+  text-decoration: none;
 }
 */
 /* ALBUMS */
@@ -73,7 +73,7 @@
 }
 
 .item {
-  margin: 0;  
+  margin: 0;
   padding: 0;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .photo {
-  margin: 0 0 80px;   
+  margin: 0 0 80px;
 }
 .photo img {
   width: 100%;
@@ -137,7 +137,7 @@ input[type=password] {
   color: #666666;
   width: 100%;
   border: 1px solid #E6E6E6;
-  border-radius: 0px; 
+  border-radius: 0px;
   height: 60px;
   margin: 6px auto;
   text-indent: 10px;
@@ -152,7 +152,7 @@ input[type=password] {
   border: 0;
   margin-top: 6px;
 }*/
-  
+
 /*  RESPONSIVE */
 
 /*@media screen and (max-width: 992px) {
