@@ -23,7 +23,7 @@
 <div id="reviewarea">
 <h1>Reviews</h1>
 <% @startup.reviews.each do |review| %>
-<p>
+<p id="reviewComment">
 <%= review.comment %></p>
 <p id="addOn">Added on: <%=  time_ago_in_words(review.created_at) %>
 </p>
