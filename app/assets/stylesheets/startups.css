@@ -93,6 +93,8 @@ h1#secondline{
 }
 
 p#footer{
+  clear: both;
+  width: 100%;
   font-size: 2vh;
 }
 
