@@ -84,11 +84,13 @@ body{
   margin-right: -1vw;
   font-family: 'Oswald';
   text-align: left;
-  background-image: url(http://pre03.deviantart.net/1328/th/pre/i/2011/013/4/8/hive_tech_wallpaper_blue_by_aexease-d373zrd.jpg);
+  background-image: url(http://host2post.com/server13/photos/7OPmUCOhzVHlQM~/wallpaper-abstract-background-rock-tastic-tech-wallpapers.jpg);
   background-size: cover;
-  text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 1px black;
+  text-shadow: 3px 0 black, 0 3px black, 3px 0 black, 0 3px black;
 }
-
+#new a{
+  font-size: 3vh;
+}
 #slogan h1{
   /*color: #595959;*/
   color: white;
