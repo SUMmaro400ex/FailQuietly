@@ -2,7 +2,9 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
-
+.showSection{
+  padding-top: 15vh;
+}
 #heading{
   height: 10vh;
   /*background-color: white;*/
@@ -111,6 +113,7 @@ p#footer{
   clear: both;
   width: 20vw;
 }
+
 #showArea{
   clear: both;
   /*margin-top: 10vh;*/
