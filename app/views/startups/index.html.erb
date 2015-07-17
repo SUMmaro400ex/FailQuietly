@@ -26,6 +26,7 @@
   <% if @startups.empty? %>
     <p>There are no startups containing the term(s) <%= params[:search] %>.</p>
   <% end %>
+  <br>
 </div>
   <div id="new"><%= link_to 'Submit a Startup', new_startup_path %></div>
   <% @startups.each do |startup| %>
