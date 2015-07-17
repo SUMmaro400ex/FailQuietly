@@ -7,6 +7,11 @@ class StartupsController < ApplicationController
   # GET /startups.json
   def index
     @startups = Startup.all
+    if params[:search]
+      @startups = Startup.search(params[:search]).order("created_at DESC")
+    else
+      @startups = Startup.all.order('created_at DESC')
+    end
   end
 
   # GET /startups/1

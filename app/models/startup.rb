@@ -4,8 +4,8 @@ class Startup < ActiveRecord::Base
   validates :price, numericality: {only_integer: true, greater_than: 0}
 
   validates :url, uniqueness: true, format: {
-  with: URI::regexp(%w(http https)), 
-  multiline: true, 
+  with: URI::regexp(%w(http https)),
+  multiline: true,
   message: 'must be a url for gif, jpg, or png image.'
   }
   has_many :reviews, dependent: :destroy
@@ -15,6 +15,10 @@ class Startup < ActiveRecord::Base
   	format("%.2f", price)
   end
 
+  def self.search(search)
+    where("name ILIKE ?", "%#{search}%")
+    # where("description ILIKE ?", "%#{search}%")
+  end
+
   belongs_to :user
 end
-
