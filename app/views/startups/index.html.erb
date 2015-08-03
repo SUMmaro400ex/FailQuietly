@@ -17,11 +17,13 @@
 
 
 <div id="content">
+  <div id="searchSpot">
   <h1> Best of the Worst</h1>
   <div>
-  <%= form_tag(startups_path, :method => "get", id: "search-form") do %>
+  <%= form_tag(startups_path, :method => "get", id: "search-form", url:"/#searchSpot") do %>
   <%= text_field_tag :search, params[:search], placeholder: "Search Startups" %>
-  <%= submit_tag "Search" %>
+  <!-- <% link_to(@searchSpot)%> -->
+  <%= submit_tag "Search", :onclick => "return goToSpot();"%>
   <% end %>
   <% if @startups.empty? %>
     <p>There are no startups containing the term(s) <%= params[:search] %>.</p>
